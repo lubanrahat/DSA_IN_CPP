@@ -23,10 +23,10 @@ int main()
   int left = 1,right=x,sqr;
   while(left<=right) {
     int mid = left+(right-left)/2;
-    if(mid*mid == x) {
+    if(mid*1LL*mid == x) {
       sqr = mid;
       break;
-    }else if(mid*mid < x) {
+    }else if(mid*1LL*mid < x) {
       sqr = mid;
       left = mid+1;
     }else {
