@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/lubanrahat/Coding/dsa-in-cpp/output/zz'
+relocations:     []
+...

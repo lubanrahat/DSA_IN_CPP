@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/lubanrahat/Coding/dsa-in-cpp/output/find_first_last_position'
+relocations:     []
+...
