@@ -9,9 +9,7 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(0);
 
-    pair<int,int> num(20,30);
-
-    cout<<num.first<<endl;
+    
 
     return 0;
 }

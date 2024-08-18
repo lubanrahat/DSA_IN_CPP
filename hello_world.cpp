@@ -1,23 +1,15 @@
-#include <wx/wx.h>
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long i64;
+#define rep(i,n) for(int i=0;i<n;i++)
 
-class MyFrame : public wxFrame {
-public:
-    MyFrame(const wxString& title)
-        : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(250, 150)) {
-        // Create a panel and a static text control
-        wxPanel* panel = new wxPanel(this, wxID_ANY);
-        wxStaticText* text = new wxStaticText(panel, wxID_ANY, wxT("Hello, World!"),
-                                              wxPoint(20, 20));
-    }
-};
+int main()
+{
 
-class MyApp : public wxApp {
-public:
-    virtual bool OnInit() {
-        MyFrame* frame = new MyFrame(wxT("Hello World"));
-        frame->Show(true);
-        return true;
-    }
-};
+    ios::sync_with_stdio(false);
+    cin.tie(0);
 
-wxIMPLEMENT_APP(MyApp);
+    cout<<"Hello world! I love C :)\n";
+
+    return 0;
+}

@@ -1,37 +1,39 @@
-#include <iostream>
-#include<algorithm>
-#include<vector>
-#include <cmath>
-#include<climits>
-#include<map>
-#include <set>
-#include<utility>
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long i64;
+#define rep(i,n) for(int i=0;i<n;i++)
 
-int findMissingNumbers(int arr[],int n) {
-  int a=0;
-  for(int i=1;i<=n;++i)
-    a^=i;
-
-  int b=0;
-  for(int i=0;i<n-1;++i) 
-    b^=arr[i];
-  return a^b;
+int binary_search(int *arr,int n,int target) {
+    int left = 0,right = n-1;
+    while(left <= right) {
+        int mid;
 }
 
 int main()
 {
 
-  std::ios::sync_with_stdio(false);
-  std::cin.tie(0);
+    ios::sync_with_stdio(false);
+    cin.tie(0);
 
-  int n;
-  std::cin>>n;
+    int tt;
+    cin>>tt;
 
-  int arr[n];
-  for(int i=0;i<n;i++)
-    std::cin>>arr[i];
-  int answer = findMissingNumbers(arr,n);
-  std::cout<<answer<<'\n';  
+    while(tt--) {
+        int n;
+        cin>>n;
+        int arr[n];
+        for(int i = 0; i < n; i++) cin>>arr[i];
+        sort(arr,arr+n);
+        int cnt = 0,num;
+        for(int i = 0; i < n; i++) {
+            if(cnt != arr[i]) {
+                num = arr[i];
+                break;
+            }
+            cnt++;
+        }
+        cout<<num<<endl;
+    }
 
-  return 0;
+    return 0;
 }
